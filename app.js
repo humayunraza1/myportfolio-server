@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors( {
-  origin: 'https://humayunraza.vercel.app/'
+  origin: ['https://humayunraza.vercel.app/', 'http://localhost:5173'],
 }));
 app.use(express.json());
 
